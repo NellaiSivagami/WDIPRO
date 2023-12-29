@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pricing Page</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+            body{
+                margin: 0;
+                padding: 0;
+                max-height: 100vh;
+                max-width: 100vw;
+                font-family: 'Roboto', sans-serif;
+                background: whitesmoke;
+                color:rgb(0, 0, 0);
+            }
+            .text-center{
+                text-align: center;
+            }
+            .border{
+                border: solid 1px #ccc;
+            }
+            .borderRadius{
+                border-radius: 10px;
+            }
+            .priceListContainer{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .priceBox{
+                width: 30%;
+                height: 300px;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 4px );
+                -webkit-backdrop-filter: blur( 4px );
+                border-radius: 10px;
+                border: 1px solid floralwhite);
+            }
+            .fontSizeForty{
+                font-size: 40px;
+            }
+            .fontSizeThirty{
+                font-size: 30px;
+            }
+            .fontSizeTwenty{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <section>
+                    <div>
+                        <h1 class="text-center fontSizeForty" id="Heading" >Your Plan,Your Choice!</h1>
+                        <p class="text-center fontSizeThirty">Explore the world that awaits you.</p>
+                        <p class="text-center fontSizeThirty" >Subscribe to,</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="priceListContainer fontSizeTwenty">
+                        <div class="priceBox text-center border borderRadius">
+                            <h2 class="text-center" >FREE</h2> 
+                            <p class="text-center">Current plan, switch to premium plans to avail more features.</p>
+                            <p class="text-center" ></p>
+                        </div>
+                        <div class="priceBox text-center border borderRadius">
+                            <h2 class="text-center">BASIC</h2>
+                            <p class="text-center">At $14, Unlock the world of adfree music. Subscribe today to get upto 30% off.  </p>
+                        </div>
+                        <div class="priceBox text-center border borderRadius">
+                            <h2 class="text-center" >STANDARD</h2>
+                            <p class="text-center" >With Standard, Enjoy unlimited songs. Download to listen offline with adfree music. With access upto 3 devices per account. At $30. 
+                                Subscribe now.</p>
+                        </div>
+                    </div>
+                </section>
+                <p class="text-center">Terms and Conditions apply*</p>
+            </article>
+        </main>
+    </body>
+</html>
