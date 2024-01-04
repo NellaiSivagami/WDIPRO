@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #fff;
+            color: 000000;
+            padding: 10px 20px;
+            border: input;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="registrationForm">
+        <h2>Registration Form</h2>
+        <label for="name">Name:</label>
+        <input type="name" id="name" name="name" required>
+
+        <label for="phone number">Phone Number:</label>
+        <input type="phone number" id="phone number" name="phone number" required> 
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="validateForm()">Register</button>
+     
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
+                alert('All fields are required');
+            } else {
+                alert('Registration successful!\nUsername: ' + username + '\nEmail: ' + email);
+                // You may want to submit the form data to the server here.
+            }
+        }
+    </script>
+
+</body>
+</html>
