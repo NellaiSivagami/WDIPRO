@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #todo-list {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-list">
+        <!-- Display tasks here -->
+    </div>
+    <form id="add-task-form">
+        <input type="text" id="task-input" placeholder="Add a new task">
+        <button type="button" onclick="addTask()">Add Task</button>
+    </form>
+    <script>
+        const todoList = document.getElementById("todo-list");
+        const addTaskForm = document.getElementById("add-task-form");
+        const taskInput = document.getElementById("task-input");
+
+        function addTask() {
+            // Implement logic to add a new task
+        }
+
+        function editTask(taskId) {
+            // Implement logic to edit an existing task
+        }
+
+        function deleteTask(taskId) {
+            // Implement logic to delete a task
+        }
+
+        function toggleCompleted(taskId) {
+            // Implement logic to mark a task as completed or uncompleted
+        }
+
+        // Example event listener for marking a task as completed
+        todoList.addEventListener("click", function(event) {
+            if (event.target.type === "checkbox") {
+                const taskId = event.target.parentElement.dataset.taskId;
+                toggleCompleted(taskId);
+            }
+        });
+    </script>
+</body>
+</html>
